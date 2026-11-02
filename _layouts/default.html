@@ -40,6 +40,7 @@
   {% assign labs = site.pages | where_exp: "p", "p.path contains 'Instructions/Labs/'" | sort: "path" %}
   {% assign groups = labs | group_by_exp: "p", "p.lab.module" %}
   {% assign appendix = site.pages | where_exp: "p", "p.path == 'Instructions/Appendix.md'" | first %}
+  {% assign demos = site.pages | where_exp: "p", "p.path contains 'Instructions/Demos/'" | sort: "path" %}
   {% assign notes = site.pages | where_exp: "p", "p.path contains 'Instructions/Notes/'" | sort: "path" %}
 
   <header class="topbar">
@@ -59,6 +60,15 @@
         {% endfor %}
       </ul>
       {% endfor %}
+      {% if demos.size > 0 %}
+      <h4>Trainer demos</h4>
+      <ul>
+        {% for p in demos %}
+        {% assign parts = p.title | remove_first: 'Demo ' | split: ' – ' %}
+        <li><a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="active"{% endif %}><span class="num">{{ parts[0] }}</span>{{ parts[1] }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
       <h4>Reference</h4>
       <ul>
         {% if appendix %}<li><a href="{{ appendix.url | relative_url }}"{% if appendix.url == page.url %} class="active"{% endif %}>Appendix</a></li>{% endif %}

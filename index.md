@@ -33,6 +33,22 @@ Apps and VPP, app protection, compliance and Conditional Access, shared and kios
 | 2.3 | [Compliance and Conditional Access for iPhones](Instructions/Labs/LAB_02_3_compliance-and-conditional-access.html) (draft) | 35 min |
 | 2.4 | [Helpdesk cases](Instructions/Labs/LAB_02_4_helpdesk-cases.html) (draft) | 30 min |
 
+## Trainer demos
+
+The trainer shows these on real devices (iPhone, iPad, Mac). Read along to repeat them later in your own environment.
+
+| Demo | Title | Module | Time |
+|---|---|---|---|
+| 1 | [Apple Business tour](Instructions/Demos/DEMO_01_apple-business-tour.html) (draft) | M1 | 10 min |
+| 2 | [Enroll an iPhone with ADE](Instructions/Demos/DEMO_02_enroll-an-iphone-with-ade.html) (draft) | M2 | 20 min |
+| 3 | [Supervised settings on the iPhone](Instructions/Demos/DEMO_03_supervised-settings-on-the-iphone.html) (draft) | M3 | 15 min |
+| 4 | [Software update with DDM](Instructions/Demos/DEMO_04_software-update-with-ddm.html) (draft) | M4 | 10 min |
+| 5 | [Apps and app configuration on the iPhone](Instructions/Demos/DEMO_05_apps-and-app-configuration.html) (draft) | M5 | 10 min |
+| 6 | [App protection on a corporate iPhone](Instructions/Demos/DEMO_06_app-protection-on-a-corporate-iphone.html) (draft) | M6 | 10 min |
+| 7 | [Conditional Access for the iPhone](Instructions/Demos/DEMO_07_conditional-access-for-the-iphone.html) (draft) | M7 | 15 min |
+| 8 | [Kiosk iPad](Instructions/Demos/DEMO_08_kiosk-ipad.html) (draft) | M8 | 15 min |
+| 9 | [iOS logs with the Mac Console and sysdiagnose](Instructions/Demos/DEMO_09_ios-logs.html) (draft) | M9 | 15 min |
+
 ## Appendix
 
 [Lab environment, paths and logs](Instructions/Appendix.html)
