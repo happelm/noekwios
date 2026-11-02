@@ -1,0 +1,9 @@
+title: Intune for iOS/iPadOS Lab Instructions
+description: Microsoft Intune for corporate iOS/iPadOS devices – lab instructions
+theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude:
+  - README.md
