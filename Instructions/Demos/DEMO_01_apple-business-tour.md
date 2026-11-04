@@ -22,14 +22,17 @@ lab:
 
 1. Apple Business → MDM servers: the Intune server, its token download and expiry.
 2. Device assignment: a purchased or added device and the MDM server it's assigned to. Intune syncs the assignment, the device then shows under the enrollment program token.
-3. Apps and Books: the location token and purchased licenses (Outlook, Teams, Edge, Authenticator, Company Portal).
-4. Managed Apple Accounts: federation with Microsoft Entra ID and service access settings.
+3. Settings → **Organizational Units** → your organization → **Content Token** (**Download**): the token Intune uses for app licenses (VPP). Purchased licenses: Outlook, Teams, Edge, Authenticator, Company Portal.
+4. Managed Apple Accounts: federation with Microsoft Entra ID. Service access: Settings → **Access Management** → **Apple Services** – **Allow Managed Apple Account on** (any / managed / supervised devices), **Apple Account on Organization Devices** (any / Managed Apple Account only), iCloud, Messages, FaceTime, Collaboration.
 5. Back in Intune: APNs certificate (Apple Account, expiry), enrollment program token, VPP token – who owns what.
 
 ### Point out
 
 - APNs expires after 365 days. Renew it with the **same** Apple Account – a new account means every device must re-enroll.
 - Devices bought through Apple or an authorized reseller can be added to Apple Business automatically. Others need Apple Configurator.
-- Service access needs ADE and iOS/iPadOS 17 or later.
+- Service access needs ADE and iOS/iPadOS 17 or later. Changes affect only new sign-ins.
+- The content token is valid for one year and becomes invalid when the password of the Managed Apple Account that downloaded it changes. Apple recommends a dedicated account with a custom role that has only **Assign licenses for Apps and Books**.
 
-<!-- VERIFY: current Apple Business menu names (MDM servers, Apps and Books, service access) before class – Apple renamed the portal in 2026. -->
+Sources: Apple Business User Guide – Manage content tokens; Customize user access to apps and services. Learn – Configure service access for Apple accounts.
+
+<!-- VERIFY: MDM server menu path in the new Apple Business UI. -->
